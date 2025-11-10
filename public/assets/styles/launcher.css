@@ -2,23 +2,23 @@
     --primary: rgb(0, 20, 36);
     --secondary: rgb(255, 255, 255);
     --font: rgb(255, 255, 255);
-    --accent: rgb(0, 153, 255);
+    --accent: rgb(255, 196, 0);
     --dark-bg: var(--primary);
     --control-bg: rgba(0, 20, 36, 0.7);
-    --control-hover: rgba(0, 153, 255, 0.3);
-    --control-active: rgba(0, 153, 255, 0.5);
+    --control-hover: rgba(255, 191, 0, 0.3);
+    --control-active: rgba(255, 208, 0, 0.5);
     --control-radius: 12px;
     --url-bar-bg: rgba(0, 20, 36, 0.7);
     --icon-color: var(--accent);
     --backdrop-blur: 10px;
     --transition-speed: 0.3s;
-    --search-glow: 0 0 15px rgba(0, 153, 255, 0.5);
+    --search-glow: 0 0 15px rgba(255, 191, 0, 0.5);
     --control-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    --ripple-color: rgba(0, 153, 255, 0.5);
+    --ripple-color: rgba(255, 208, 0, 0.5);
     --sidebar-width: 250px;
     --nav-height: 60px;
     --tab-height: 40px;
-    --accent-glow: 0 0 20px rgba(0, 153, 255, 0.2);
+    --accent-glow: 0 0 20px rgba(255, 174, 0, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -47,7 +47,7 @@
 }
 
 body {
-    background: rgb(2, 36, 62);
+    background: rgb(62, 30, 2);
     color: var(--font);
     width: 100vw;
     height: 100vh;
