@@ -26,6 +26,7 @@
     "wisp-server-node": "^1.1.7"
   },
   "devDependencies": {
-    "eslint": "^9.28.0"
+    "eslint": "^9.28.0",
+    "wrangler": "^3.70.0"
   }
 }
