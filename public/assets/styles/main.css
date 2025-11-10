@@ -2,7 +2,7 @@
     /* --primary: rgb(0, 20, 36); */
     --secondary: rgb(255, 255, 255);
     --font: rgb(255, 255, 255);
-    --accent: rgb(0, 153, 255);
+    --accent: rgb(168, 115, 50);
 }
 
 @font-face {
@@ -37,7 +37,7 @@ body {
     overflow: hidden;
     height: 100vh;
 
-    background-color: rgb(0, 20, 36);
+    background-color: rgb(89, 61, 33);
     background-position: center;
     background-size: cover;
 }
@@ -71,7 +71,7 @@ body {
 #big {
     font-size: 6vw;
     margin: 0;
-    background: -webkit-linear-gradient(#00b7ff, #ffffff);
+    background: -webkit-linear-gradient(#c68642, #ffffff);
     text-shadow: 0 0 5vh var(--accent);
     -webkit-background-clip: text;
     background-clip: text;
@@ -110,7 +110,7 @@ body {
     text-align: center;
     font-size: 1.5vh;
     margin: 0;
-    background-color: rgba(0, 20, 36, 0.8);
+    background-color: rgba(89, 61, 33, 0.8);
     backdrop-filter: blur(10px);
     z-index: 1000;
     display: flex;
@@ -241,13 +241,13 @@ body {
     min-width: 280px;
     height: 5.5vh;
     min-height: 45px;
-    background-color: rgba(12, 30, 50, 0.7);
+    background-color: rgba(122, 85, 45, 0.7);
     backdrop-filter: blur(12px);
     border-radius: 12px;
     display: flex;
     align-items: center;
     padding: 0 1vw;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(97, 187, 255, 0.15) inset;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(168, 115, 50, 0.15) inset;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     overflow: hidden;
     position: relative;
@@ -267,9 +267,9 @@ body {
 }
 
 #search-bar:focus-within {
-    box-shadow: 0 10px 30px rgba(0, 153, 255, 0.35), 0 0 0 2px rgba(97, 187, 255, 0.4) inset;
+    box-shadow: 0 10px 30px rgba(168, 115, 50, 0.35), 0 0 0 2px rgba(168, 115, 50, 0.4) inset;
     transform: translateY(-2px) scale(1.01);
-    background-color: rgba(15, 35, 60, 0.85);
+    background-color: rgba(140, 98, 52, 0.85);
 }
 
 #search-input {
@@ -1187,20 +1187,20 @@ input[type="text"]:focus {
 
 .star {
     position: absolute;
-    width: 2px;
-    height: 2px;
-    background: white;
-    border-radius: 50%;
-    opacity: 0.8;
-    animation: twinkle 3s infinite ease-in-out, drift 20s linear infinite;
+    width: 4px;
+    height: 4px;
+    background: rgb(245, 222, 179);
+    border-radius: 2px;
+    opacity: 0.6;
+    animation: float 4s infinite ease-in-out, drift 25s linear infinite;
 }
 
-@keyframes twinkle {
-    0%, 100% { opacity: 0.8; }
-    50% { opacity: 0.2; }
+@keyframes float {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.2); }
 }
 
 @keyframes drift {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(30px, 30px); }
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(30px, 30px) rotate(360deg); }
 }
