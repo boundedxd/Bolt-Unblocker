@@ -2,19 +2,19 @@
     --primary: rgb(0, 20, 36);
     --secondary: rgb(255, 255, 255);
     --font: rgb(255, 255, 255);
-    --accent: rgb(0, 153, 255);
+    --accent: rgb(255, 179, 0);
     --dark-bg: var(--primary);
     --control-bg: rgba(0, 20, 36, 0.7);
-    --control-hover: rgba(0, 153, 255, 0.3);
-    --control-active: rgba(0, 153, 255, 0.5);
+    --control-hover: rgba(255, 225, 0, 0.3);
+    --control-active: rgba(255, 230, 0, 0.5);
     --control-radius: 12px;
     --url-bar-bg: rgba(0, 20, 36, 0.7);
     --icon-color: var(--accent);
     --backdrop-blur: 10px;
     --transition-speed: 0.3s;
-    --search-glow: 0 0 15px rgba(0, 153, 255, 0.5);
+    --search-glow: 0 0 15px rgba(255, 174, 0, 0.5);
     --control-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    --ripple-color: rgba(0, 153, 255, 0.5);
+    --ripple-color: rgba(255, 204, 0, 0.5);
     --sidebar-width: 200px;
     --nav-height: 25px;
     --tab-height: 32px;
@@ -344,7 +344,7 @@ body::before {
     transition: background-color var(--transition-speed),
         transform var(--transition-speed);
     z-index: 1001;
-    box-shadow: 0 0 10px rgba(0, 153, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 179, 0, 0.5);
 }
 
 .sidebar-toggle:hover {
@@ -401,7 +401,7 @@ body::before {
 }
 
 .new-tab-button {
-    background: rgba(0, 153, 255, 0.1);
+    background: rgba(255, 196, 0, 0.1);
     border: none;
     color: var(--accent);
     width: 32px;
@@ -444,7 +444,7 @@ body::before {
 }
 
 .tab.active {
-    background: rgba(0, 153, 255, 0.12);
+    background: rgba(255, 179, 0, 0.12);
 }
 
 .tab-favicon {
@@ -590,5 +590,5 @@ body::before {
 /* Active tab styling */
 .tab.active {
     background-color: rgba(66, 133, 244, 0.1);
-    border-left: 3px solid #4285f4;
+    border-left: 3px solid #f4c542;
 }
