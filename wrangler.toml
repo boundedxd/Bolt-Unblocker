@@ -4,10 +4,5 @@ workers_dev = true
 compatibility_date = "2025-11-10"
 main = "workers-site/index.js"
 
-[[kv_namespaces]]
-binding = "__STATIC_CONTENT"
-id = "95db11f28ddb417485cf8708553fec08"
-preview_id = "95db11f28ddb417485cf8708553fec08"
-
 [site]
 bucket = "./public"
