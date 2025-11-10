@@ -8,3 +8,8 @@ main = "workers-site/index.js"
 bucket = "./public"
 include = ["public/**/*"]
 exclude = []
+
+[[kv_namespaces]]
+binding = "__STATIC_CONTENT"
+id = "bolt_static_content"
+preview_id = "bolt_static_content_preview"
