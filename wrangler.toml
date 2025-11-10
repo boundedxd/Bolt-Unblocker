@@ -11,5 +11,4 @@ exclude = []
 
 [[kv_namespaces]]
 binding = "__STATIC_CONTENT"
-id = "bolt_static_content"
-preview_id = "bolt_static_content_preview"
+id = "95db11f28ddb417485cf8708553fec08"
