@@ -1,11 +1,14 @@
 import { getAssetFromKV, NotFoundError } from '@cloudflare/kv-asset-handler';
 
-const manifest = import.meta.url.startsWith('file://') ? {} : JSON.parse(ASSET_MANIFEST);
-
 export default {
   async fetch(request, env, ctx) {
     try {
-      // Use the default KV namespace for static assets
+      // Get the manifest from the environment variable set by Wrangler
+      let manifest = {};
+      if (typeof ASSET_MANIFEST !== 'undefined') {
+        manifest = JSON.parse(ASSET_MANIFEST);
+      }
+
       return await getAssetFromKV(
         {
           request,
