@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node app.js",
     "build": "echo \"Build complete\"",
-    "deploy": "npx wrangler publish"
+    "deploy": "npx wrangler deploy"
   },
   "author": "Donut Dev",
   "license": "MIT",
