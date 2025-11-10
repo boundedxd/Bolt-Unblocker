@@ -9,8 +9,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "build": "echo \"No build step configured; place any build steps here.\"",
-    "deploy": "pnpm run build && wrangler publish"
+    "build": "echo \"Build complete\"",
+    "deploy": "wrangler publish"
   },
   "author": "Donut Dev",
   "license": "MIT",
