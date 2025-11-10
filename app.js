@@ -83,8 +83,8 @@ process.on("SIGINT", shutdown);
 process.on("SIGTERM", shutdown);
 
 
-let port = parseInt(process.env.PORT || "8080");
-if (isNaN(port)) port = 8080;
+let port = parseInt(process.env.PORT || "9090");
+if (isNaN(port)) port = 9090;
 
 try {
     const address = await fastify.listen({ port, host: "0.0.0.0" });
