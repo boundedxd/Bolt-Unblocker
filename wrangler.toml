@@ -8,7 +8,3 @@ main = "workers-site/index.js"
 bucket = "./public"
 include = ["public/**/*"]
 exclude = []
-
-[[kv_namespaces]]
-binding = "__STATIC_CONTENT"
-id = "95db11f28ddb417485cf8708553fec08"
