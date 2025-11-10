@@ -36,22 +36,21 @@ body {
     font-family: "font";
     overflow: hidden;
     height: 100vh;
-
-    background-color: rgb(89, 61, 33);
-    background-image: url('https://miro.medium.com/v2/resize:fit:1200/1*50uVa-rh0tztW1-PPPGsXw.jpeg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: none;
 }
 
 #background {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     border: none;
     background-color: var(--primary);
+    background-image: url('https://miro.medium.com/v2/resize:fit:1200/1*50uVa-rh0tztW1-PPPGsXw.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: -100;
 }
 
