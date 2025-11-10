@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@cloudflare/kv-asset-handler':
+        specifier: ^0.4.0
+        version: 0.4.0
       '@fastify/static':
         specifier: ^8.2.0
         version: 8.2.0
@@ -38,6 +41,10 @@ importers:
         version: 9.28.0
 
 packages:
+
+  '@cloudflare/kv-asset-handler@0.4.0':
+    resolution: {integrity: sha512-+tv3z+SPp+gqTIcImN9o0hqE9xyfQjI1XD9pL6NuKjua9B1y7mNYv0S9cP+QEbA4ppVgGZEmKOvHX5G5Ei1CVA==}
+    engines: {node: '>=18.0.0'}
 
   '@eslint-community/eslint-utils@4.7.0':
     resolution: {integrity: sha512-dyybb3AcajC7uha6CvhdVRJqaKyn7w2YKqKyAN37NKYgZT36w+iRb0Dymmc5qEJ549c/S31cMMSFd75bteCpCw==}
@@ -757,6 +764,10 @@ packages:
     engines: {node: '>=10'}
 
 snapshots:
+
+  '@cloudflare/kv-asset-handler@0.4.0':
+    dependencies:
+      mime: 3.0.0
 
   '@eslint-community/eslint-utils@4.7.0(eslint@9.28.0)':
     dependencies:

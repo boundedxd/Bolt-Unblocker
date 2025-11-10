@@ -8,11 +8,13 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "deploy": "wrangler publish"
   },
   "author": "Donut Dev",
   "license": "MIT",
   "dependencies": {
+  "@cloudflare/kv-asset-handler": "^0.4.0",
     "@fastify/static": "^8.2.0",
     "@mercuryworkshop/bare-mux": "^2.1.7",
     "@mercuryworkshop/epoxy-transport": "^2.1.27",
