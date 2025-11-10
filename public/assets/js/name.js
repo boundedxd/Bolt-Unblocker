@@ -3,7 +3,7 @@ var submit = document.getElementById("enter");
 
 submit.addEventListener("click", function () {
     if (namei.value === "") {
-        alert("Please enter a name");
+        alert("Whats your name on protato?");
         return;
     }
     localStorage.setItem("name", namei.value);

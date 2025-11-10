@@ -8,7 +8,7 @@ if (localStorage.getItem('autoab') === 'true' && !window.top.location.href.inclu
         alert('Please allow popups and redirects for auto about:blank cloak to work.');
     }
     newTab.document.body.innerHTML = '<iframe src="/srcdocs/apps/index.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>';
-    window.top.location.href = 'https://classroom.google.com/u/0/h';
+    window.top.location.href = 'https://cats.com';
 }
 
 function changeFavicon(newFaviconPath) {
